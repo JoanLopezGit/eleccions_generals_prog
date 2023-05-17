@@ -1,3 +1,5 @@
+package Imports;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -51,7 +53,7 @@ public class VotsComuAuto {
                         // execute the preparedstatement
                         preparedStmt.execute();
 
-                        //Tanquem la connexió
+                        //Tanquem la connexiï¿½
 
                     } catch (Exception e) {
                         System.out.println(e);

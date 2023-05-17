@@ -1,3 +1,5 @@
+package Imports;
+
 public class IntroduccionTotal {
     public static void main(String[] args) throws Exception {
          IntroComAutonomes.comAutonomes();
@@ -11,8 +13,6 @@ public class IntroduccionTotal {
          IntroPersones.persones();
          System.out.println("OK");
          IntroCandidats.candidats();
-         System.out.println("OK");
-         VotsMunicipi.VotsM();
          System.out.println("OK");
          VotsProvincia.VotsP();
          System.out.println("OK");
