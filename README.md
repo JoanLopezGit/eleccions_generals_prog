@@ -1,21 +1,17 @@
 # DAW-M3-UF6-Pt1_JDBC
 Adaptació del projecte de Bases de Dades a la UF6 de Programació de Persistència a la Base de Dades
 
-DAO
-Metodes per realitzar les operacions CRUD
+DAO: Aquest directori conté classes Java per al patró Data Access Object (DAO). La seva funció és gestionar la capa de dades de l'aplicació, interactuant amb la base de dades per a obtenir i emmagatzemar dades relacionades amb candidats (CandidatDAO.java), candidatures (CandidaturesDAO.java), municipis (MunicipisDAO.java), persones (PersonesDAO.java), províncies (ProvinciesDAO.java) i comunitats autònomes (comunitats_autonomesDAO.java).Encarregada de la arquitectura CRUD.
 
-datos
-Fitxers de dades per a realitzar la importació
+Importacions: Aquest directori conté les classes utilitzades per a gestionar la importació de dades en l'aplicació. Hi ha classes per a manejar la introducció de candidats, candidatures, comunitats autònomes, persones, províncies, municipis, i altres dades relacionades amb les eleccions com els vots.
 
-Main
-Classe main per arrancar el programa
+Model: Aquest directori conté  les classes Java que defineixen els models de dades utilitzades en l'aplicació, com a Candidat (Candidats.java), Candidatures (Candidatures.java), Comunitats Autònomes (Comunitats_autonomes.java), Municipis (Municipis.java), Persones (Persones.java) i Províncies (Provincies.java)4.
 
-Menu
-Classe per a mostrar per pantalla els menus, gestionar la selecció de opcions en aquests i cridar els metodes que calguin en cada moment
+Utils: Aquest directori conté actualment una única classe Java, Connector_MySQL.java, que  gestiona la connexió a una base de dades MySQL fent ús de JDBC.
 
-Model
-Definició de les classes de les que deriven les que s'utilitzen a DAO, amb els seus getters i setters
+datos:Fitxers de dades per a realitzar la importació
 
-Utils
-Classe conector per establir la connexió entre Java i MySQL fent ús de JDBC
-Importació de la base de dades
+Main:Classe principal per arrancar el programa
+
+Menu:Classe per a mostrar per pantalla els menus, gestionar la selecció de opcions en aquests i cridar els metodes que calguin en cada moment
+
