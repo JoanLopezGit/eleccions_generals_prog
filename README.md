@@ -1,4 +1,4 @@
-# eleccions_generals_prog
+# DAW-M3-UF6-Pt1_JDBC
 Adaptació del projecte de Bases de Dades a la UF6 de Programació de Persistència a la Base de Dades
 
 DAO
