@@ -41,7 +41,7 @@ public class CandidatDAO implements DAODB<Candidats> {
         try (PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setInt(1, candidats.getCandidatura_id());
             ps.setInt(2, candidats.getPersona_id());
-            ps.setInt(3, candidats.getCandidat_id());
+            ps.setInt(3, candidats.getProvincia_id());
             ps.executeUpdate();
             return true;
         }
