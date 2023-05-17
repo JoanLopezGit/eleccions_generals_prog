@@ -287,8 +287,8 @@ public class Menu {
                 System.out.println("║ 3. Provincia         ║");
                 System.out.println("╚══════════════════════╝");
                 System.out.print("Esculli una opció: ");
-                int optiona = scan.nextInt();
-                switch (optiona) {
+                int options = scan.nextInt();
+                switch (options) {
                     case 1 -> {
                         System.out.print("Introdueixi una nova candidatura: ");
                         idCandidatura = scan.nextInt();
