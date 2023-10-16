@@ -26,6 +26,17 @@ public class ProvinciesDAO implements DAODB<Provincies> {
     }
 
     @Override
+    public boolean obrir(Provincies provincia) throws SQLException {
+        String query = "INSERT INTO provincies (comunitat_aut_id, nom, codi_ine) VALUES (?, ?, ?)";
+
+        try (PreparedStatement statement = connection.prepareStatement(query)) {
+            omplirSentencia(provincia, statement);
+            statement.executeUpdate();
+        }
+        return true;
+    }
+
+    @Override
     public boolean update(Provincies provincia) throws SQLException {
         String query = "UPDATE provincies SET comunitat_aut_id = ?, nom = ? WHERE provincia_id = ?";
 
